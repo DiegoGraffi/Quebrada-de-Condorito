@@ -1,0 +1,269 @@
+body {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+:root {
+    --color-principal: rgb(158, 130, 38);
+}
+
+/*   NAV BAR   */
+
+.header {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    /* height: 100px; */
+}
+
+.nav_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    /* border: 1px solid black; */
+    position: absolute;
+    width: 100vw;
+    height: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav_img {
+    width: 10rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav_link {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav_links {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    transition: all ease-in-out 150ms;
+}
+
+.nav_links:hover {
+    cursor: pointer;
+    color: white;
+    padding: 42px 20px;
+    background-color: var(--color-principal);
+}
+
+/*   HERO SECTION   */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000002d 0%, #0000002d 0%),
+        url(../images/actividades.jpg);
+    background-size: cover;
+    z-index: -10;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_title {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+
+.hero_divider {
+    width: 700px;
+    margin-bottom: 20px;
+}
+
+.hero_subtitle {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.button {
+    margin-top: 200px;
+    cursor: pointer;
+    transition: transform ease-in-out 300ms;
+}
+
+.button:hover {
+    transform: rotate(360deg);
+}
+
+/*   DESCRIPTION SECTION   */
+
+.description {
+    height: 700px;
+}
+
+.flora {
+    background-color: black;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 500px;
+    width: 800px;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.description_text {
+    text-align: start;
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    transition: all ease-in-out 300ms;
+    margin-top: 2rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--color-principal);
+    border-radius: 5px;
+}
+
+.flora_btn {
+    background-color: white;
+    color: black;
+}
+
+.flora_btn:hover {
+    background-color: var(--color-principal);
+    color: white;
+}
+
+.flora_img_container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flora_img_container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #000000a6 80%, #000000b2 80%),
+        url(../images/flora.jpg);
+    background-size: cover;
+    background-position: center center;
+    z-index: -10;
+}
+
+.jote_png {
+    position: absolute;
+    z-index: -1;
+    height: 700px;
+    right: 0;
+}
+
+/*   FOOTER  SECTION   */
+
+.footer.container {
+    margin-top: 1rem;
+}
+
+.footer_section {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    width: 800px;
+    padding: 5rem;
+    column-gap: 2rem;
+}
+
+.footer_title {
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+span {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.footer_section > p {
+    font-size: 0.9rem;
+}
+
+.footer_paragraph {
+    margin-bottom: 10px;
+}
+
+.footer_redes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.icon_container {
+    display: flex;
+    align-self: center;
+}
+
+.footer_icon {
+    padding: 0 1rem;
+}
