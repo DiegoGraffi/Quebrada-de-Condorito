@@ -42,7 +42,7 @@ body {
 }
 
 .nav_img {
-  width: 10rem;
+  width: 8.5rem;
   position: relative;
   cursor: pointer;
 }
@@ -59,14 +59,14 @@ body {
   text-decoration: none;
   color: black;
   font-weight: 400;
-  transition: all ease-in-out 150ms;
+  opacity: 80%;
+  transition: all ease-in-out 200ms;
 }
 
 .nav_links:hover {
   cursor: pointer;
-  color: white;
-  padding: 42px 20px;
-  background-color: var(--color-principal);
+  opacity: 100%;
+  font-weight: 900;
 }
 
 /*   HERO SECTION   */
@@ -86,7 +86,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(180deg, #0000002d 0%, #0000002d 0%),
+  background-image: linear-gradient(180deg, #00000052 50%, #00000052 50%),
     url(../images/biodiversidad.jpg);
   background-size: cover;
   z-index: -10;
@@ -136,10 +136,10 @@ body {
   height: 700px;
 }
 
-.flora {
+/* .flora {
   background-color: black;
   color: white;
-}
+} */
 
 .content {
   display: flex;
@@ -154,45 +154,36 @@ body {
   text-transform: uppercase;
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .description_text {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .btn {
-  color: white;
-  background-color: black;
-  border: none;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
   padding: 1rem 2rem;
   text-transform: uppercase;
   display: flex;
   align-self: center;
   justify-self: center;
   transition: all ease-in-out 300ms;
-  margin-top: 2rem;
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: var(--color-principal);
-  border-radius: 5px;
-}
-
-.flora_btn {
-  background-color: white;
-  color: black;
-}
-
-.flora_btn:hover {
-  background-color: var(--color-principal);
+  background-color: black;
+  /* border-radius: 3px; */
   color: white;
 }
 
 .flora_img_container {
   width: 100%;
-  height: 300px;
+  height: 500px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -261,9 +252,9 @@ span {
 
 .icon_container {
   display: flex;
-  align-self: center;
+  justify-content: space-between;
 }
 
 .footer_icon {
-  padding: 0 1rem;
+  margin-left: 2rem;
 }
