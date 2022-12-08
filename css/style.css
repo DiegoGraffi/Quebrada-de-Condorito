@@ -6,6 +6,11 @@ body {
   --color-principal: rgb(91, 117, 30);
 }
 
+::selection {
+  background: rgb(86, 141, 74);
+  color: white;
+}
+
 /*   NAV BAR   */
 
 .header {

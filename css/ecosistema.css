@@ -92,7 +92,7 @@ body {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(180deg, #00000052 50%, #00000052 50%),
-    url(../images/biodiversidad.jpg);
+    url(../images/ecosistema.jpg);
   background-size: cover;
   z-index: -10;
 }
@@ -138,82 +138,36 @@ body {
 /*   DESCRIPTION SECTION   */
 
 .description {
-  height: 700px;
+  margin-top: 3rem;
+  min-height: 100px;
 }
-
-/* .flora {
-  background-color: black;
-  color: white;
-} */
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 500px;
-  width: 500px;
+  min-height: 100px;
+  width: 600px;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
 }
 
 .subtitle {
   text-transform: uppercase;
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .description_text {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
-.btn {
-  color: black;
-  background-color: white;
-  border: 2px solid black;
-  padding: 1rem 2rem;
-  text-transform: uppercase;
-  display: flex;
-  align-self: center;
-  justify-self: center;
-  transition: all ease-in-out 300ms;
-}
-
-.btn:hover {
-  cursor: pointer;
-  background-color: black;
-  /* border-radius: 3px; */
-  color: white;
-}
-
-.flora_img_container {
-  width: 100%;
-  height: 500px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flora_img_container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(180deg, #0000002d 0%, #0000002d 0%),
-    url(../images/flora.jpg);
-  background-size: cover;
-  background-position: center center;
-  z-index: -10;
-}
-
-.jote_png {
-  position: absolute;
-  z-index: -1;
-  height: 700px;
-  right: 0;
+.description_item {
+  line-height: 25px;
+  text-align: center;
 }
 
 /*   FOOTER  SECTION   */
@@ -261,5 +215,5 @@ span {
 }
 
 .footer_icon {
-  margin-left: 2rem;
+  padding-left: 1rem;
 }
