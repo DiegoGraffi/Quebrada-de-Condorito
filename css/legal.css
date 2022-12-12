@@ -149,6 +149,8 @@ body {
 .doc_item:hover {
   background-color: black;
   color: white;
+  border-radius: 5px;
+  transform: scale(1.1);
 }
 
 a:link,
