@@ -31,6 +31,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .nav {
@@ -182,13 +183,13 @@ body {
   justify-content: center;
   align-items: center;
   transition: all ease-in-out 300ms;
-  opacity: 70%;
+  opacity: 85%;
   z-index: 1;
 }
 
 .img_gallery:hover {
   transform: scale(1.7);
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
   opacity: 100%;
   z-index: 100;
 
