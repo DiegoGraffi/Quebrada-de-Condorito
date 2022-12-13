@@ -2,15 +2,15 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
-:root {
-  --color-principal: rgb(91, 117, 30);
-}
-
 ::selection {
   background: rgb(86, 141, 74);
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+}
 /*   NAV BAR   */
 
 .header {
@@ -132,7 +132,7 @@ body {
 }
 
 .button:hover {
-  transform: rotate(360deg);
+  transform: scale(1.2);
 }
 
 /*   DESCRIPTION SECTION   */

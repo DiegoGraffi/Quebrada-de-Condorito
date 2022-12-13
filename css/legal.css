@@ -7,6 +7,11 @@ body {
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 /*   NAV BAR   */
 
 .header {
@@ -116,7 +121,7 @@ body {
 }
 
 .button:hover {
-  transform: rotate(360deg);
+  transform: scale(1.2);
 }
 
 /*   DESCRIPTION SECTION   */
