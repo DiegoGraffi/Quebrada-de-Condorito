@@ -2,10 +2,6 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
-:root {
-  --color-principal: rgb(158, 130, 38);
-}
-
 ::selection {
   background: rgb(86, 141, 74);
   color: white;
@@ -92,7 +88,7 @@ body {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(180deg, #00000052 50%, #00000052 50%),
-    url(../images/actividades.jpg);
+    url(../images/info.jpg);
   background-size: cover;
   z-index: -10;
 }
@@ -135,15 +131,6 @@ body {
   transform: rotate(360deg);
 }
 
-.btn_map {
-  text-decoration: none;
-  color: black;
-}
-
-.btn_map:hover {
-  color: white;
-}
-
 /*   DESCRIPTION SECTION   */
 
 .description {
@@ -154,23 +141,34 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   min-height: 100px;
-  width: 800px;
-  margin-bottom: 4rem;
+  width: 600px;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .subtitle {
   text-transform: uppercase;
-  font-size: 2rem;
-  text-align: start;
+  font-size: 3rem;
+  text-align: center;
   margin-bottom: 1.5rem;
 }
 
 .description_text {
-  text-align: justify;
+  text-align: center;
   margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: rgb(86, 141, 74);
+}
+
+.description_item {
+  line-height: 25px;
+  text-align: justify;
+  margin-top: 2rem;
 }
 
 .btn {
@@ -179,12 +177,11 @@ body {
   border: 2px solid black;
   padding: 1rem 2rem;
   text-transform: uppercase;
-  display: flex;
-  align-self: flex-start;
-  justify-self: center;
+
   transition: all ease-in-out 300ms;
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  width: 300px;
 }
 
 .btn:hover {
@@ -194,97 +191,57 @@ body {
   color: white;
 }
 
-.description_item {
-  line-height: 25px;
-  text-align: justify;
-}
-
-.img_actividades {
-  width: 1200px;
-  margin-bottom: 4rem;
-  transition: all ease-in-out 300ms;
-}
-
 a:link,
 a:visited,
 a:active {
   text-decoration: none;
 }
 
-/*   DESCRIPTION ACTIVITIES   */
-
-.activity {
-  display: grid;
-  grid-template-columns: 50% 1fr;
-  align-items: center;
-  gap: 2rem;
-  margin: 8rem 0;
-  opacity: 80%;
-  transition: all ease-in-out 500ms;
+.reg_container {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid red; */
+  min-width: 100px;
+  margin-top: 2rem;
 }
 
-.activity_photo_acampe {
-  width: auto;
-  height: 300px;
-  background-image: url(../images/Acampar.JPG);
-  background-position: center center;
-  background-size: cover;
-  border-radius: 5px;
-}
-
-.activity_photo_pesca {
-  width: auto;
-  height: 300px;
-  background-image: url(../images/pesca.jpg);
-  background-position: center center;
-  background-size: cover;
-  border-radius: 5px;
-}
-
-.activity_photo_noche {
-  width: auto;
-  height: 300px;
-  background-image: url(../images/noche.jpg);
-  background-position: center center;
-  background-size: cover;
-  border-radius: 5px;
-}
-
-.activity_photo_bicicleta {
-  width: auto;
-  height: 300px;
-  background-image: url(../images/bicicleta.jpg);
-  background-position: center center;
-  background-size: cover;
-  border-radius: 5px;
-}
-
-.activity:hover {
-  transform: scale(1.1);
-  opacity: 100%;
-}
-
-.footer_banner {
-  width: 100%;
-  height: 500px;
-  position: relative;
+.reg_button {
+  border: 2px solid black;
+  text-transform: uppercase;
+  color: black;
+  padding: 1rem 2rem;
+  margin: 0 2rem;
+  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all ease-in-out 300ms;
 }
 
-.footer_banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(180deg, #0000002d 0%, #0000002d 0%),
-    url(../images/banner.jpg);
-  background-size: cover;
-  background-position: center center;
-  z-index: -10;
+.reg_button:hover {
+  cursor: pointer;
+  background-color: black;
+  /* border-radius: 3px; */
+  color: white;
+}
+
+.reg_button_reco {
+  border: 2px solid black;
+  text-transform: uppercase;
+  color: black;
+  padding: 1rem 2rem;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 300ms;
+}
+
+.reg_button_reco:hover {
+  cursor: pointer;
+  background-color: black;
+  /* border-radius: 3px; */
+  color: white;
 }
 
 /*   FOOTER  SECTION   */

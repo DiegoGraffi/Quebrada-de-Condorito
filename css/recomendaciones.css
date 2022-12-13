@@ -2,10 +2,6 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
-:root {
-  --color-principal: rgb(158, 130, 38);
-}
-
 ::selection {
   background: rgb(86, 141, 74);
   color: white;
@@ -76,27 +72,6 @@ body {
 
 /*   HERO SECTION   */
 
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(180deg, #00000052 50%, #00000052 50%),
-    url(../images/ecosistema.jpg);
-  background-size: cover;
-  z-index: -10;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -104,41 +79,10 @@ body {
   align-items: center;
 }
 
-.hero_title {
-  text-align: center;
-  color: black;
-  text-transform: uppercase;
-  font-size: 3rem;
-  margin-top: 15rem;
-  margin-bottom: 1rem;
-}
-
-.hero_divider {
-  width: 700px;
-  margin-bottom: 20px;
-}
-
-.hero_subtitle {
-  color: white;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.button {
-  margin-top: 200px;
-  cursor: pointer;
-  transition: transform ease-in-out 300ms;
-}
-
-.button:hover {
-  transform: rotate(360deg);
-}
-
 /*   DESCRIPTION SECTION   */
 
 .description {
-  margin-top: 1rem;
+  margin-top: 10rem;
   min-height: 100px;
 }
 
@@ -148,13 +92,14 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100px;
-  width: 600px;
-  margin-top: 3rem;
+  width: 700px;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .subtitle {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   margin-bottom: 1.5rem;
 }
@@ -162,53 +107,22 @@ body {
 .description_text {
   text-align: center;
   margin-bottom: 1rem;
-  margin-top: 3rem;
-  font-size: 1.2rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: rgb(86, 141, 74);
 }
 
 .description_item {
   line-height: 25px;
-  text-align: center;
-}
-
-.btn {
-  color: black;
-  background-color: white;
-  border: 2px solid black;
-  padding: 1rem 2rem;
-  text-transform: uppercase;
-  display: flex;
-  align-self: center;
-  justify-self: center;
-  transition: all ease-in-out 300ms;
+  text-align: justify;
   margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-a:link,
-a:visited,
-a:active {
-  text-decoration: none;
-}
-
-.btn:hover {
-  cursor: pointer;
-  background-color: black;
-  /* border-radius: 3px; */
-  color: white;
-}
-
-.mapa {
-  /* border-radius: 10px; */
-  border: 3px solid black;
 }
 
 /*   FOOTER  SECTION   */
 
 .footer.container {
   margin-top: 1rem;
-  background-color: black;
-  color: white;
 }
 
 .footer_section {
