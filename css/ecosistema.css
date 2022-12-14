@@ -133,7 +133,7 @@ html {
 }
 
 .button:hover {
-  transform: sclae(1.2);
+  transform: scale(1.2);
 }
 
 /*   DESCRIPTION SECTION   */
